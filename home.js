@@ -110,7 +110,7 @@ async function Signout() {
         timer: 1500
       })
     // ย้ายหน้าจอไปหน้า = ""
-    window.location = "home.html";
+    window.location = "index.html";
 }
 
 // ------  - function เมื่อโหลดหน้าจอใหม่ --- - -  

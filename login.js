@@ -75,7 +75,7 @@ await   Swal.fire({
     //  ถ้าไม่กด ckeck ส่งก้อนobject แบบ session  และไปยังหน้า home
     if (!keepLoggedIn) {
         sessionStorage.setItem('user', JSON.stringify(user));
-        window.location = "home.html";
+        window.location = "index.html";
     }
     //  ถ้ากด check
     else {
@@ -84,7 +84,7 @@ await   Swal.fire({
         //  ส่งก้อนobject ของผู้ใช้
         localStorage.setItem('user', JSON.stringify(user));
         //  และไปยังหน้า home
-        window.location = "home.html";
+        window.location = "index.html";
     }
     
 }

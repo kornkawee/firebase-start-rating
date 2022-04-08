@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Home</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS Boostrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!-- Font Awesome 5-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <!-- Cryto JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"
+    integrity="sha512-E8QSvWZ0eCLGk4km3hxSsNmGWbLtSCSUcewDQPQWZF6pEU8GlT8a5fF32wOl1i8ftdMhssTrF/OhyGWwonTcXA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- Sweet Alert 2 -->
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- CSS For Home -->
+  <link rel="stylesheet" href="assets/css/styleHome.css">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active bg-light text-dark fw-bold btn" aria-current="page" href="#">Home</a>
+          </li>
+
+        </ul>
+        <form class="d-inline my-2 my-lg-0">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a id="userlink" class="nav-link " aria-current="page" href="#">UserName</a>
+            </li>
+            <li class="nav-item">
+              <a id="signoutlink" class="nav-link" href="#">Log Out</a>
+            </li>
+
+          </ul>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  
+  <h1 id="hh" class="text-center alert alert-success">Add Review</h1>
+  <div class="container">
+
+  </div>
+
+  <!-- Add Review -->
+  <div class="container  contentbg ">
+    <div class="container addrating">
+
+      <div id="closeReview" class="ms-auto">
+        <!-- <i class="fas fa-times"></i> -->
+      </div>
+
+      <div class="post">
+        <div class="text">Thank for rating us!</div>
+      </div>
+      <!-- Progress Bar -->
+      <div id="progress" class="progress my-4">
+        <div id="progressbar" class="progress-bar bg-success" role="progressbar" style="width: 0%;" aria-valuenow="0"
+          aria-valuemin="0" aria-valuemax="100">
+          <span id="progessPercen">25%</span>
+        </div>
+      </div>
+
+  
+
+      <div class="star-widget">
+        <input value="5" type="radio" name="rate" id="rate-5">
+        <label for="rate-5" class="fas fa-star"></label>
+        <input value="4" type="radio" name="rate" id="rate-4">
+        <label for="rate-4" class="fas fa-star"></label>
+        <input value="3" type="radio" name="rate" id="rate-3">
+        <label for="rate-3" class="fas fa-star"></label>
+        <input value="2" type="radio" name="rate" id="rate-2">
+        <label for="rate-2" class="fas fa-star"></label>
+        <input value="1" type="radio" name="rate" id="rate-1">
+        <label for="rate-1" class="fas fa-star"></label>
+        <form action="#" id="formreview">
+          <header id="heading"></header>
+          <!-- Name Image -->
+          <div class="input-group">
+            <input id="namebox" type="text" placeholder="namebox" class="form-control">
+            <span id="extlab" class="input-group-text">---.extlab</span>
+          </div>
+          <!-- Image Selected -->
+          <img id="myimg" class="img-fluid">
+
+          <div id="selectimg" class="container addimg my-3">
+            <span class="far fa-image mx-2"></span>
+            <p id="textimg" class="text-center ms-2 mt-3">เพิ่มรูปภาพ</p>
+
+          </div>
+          <div class="textarea">
+            <textarea id="message" cols="30" placeholder="Describe your exprience.."></textarea>
+          </div>
+          <button id="btnPost" class="btn btn-info w-100 btn-lg my-3">Post</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- Add Review -->
+  <!-- Table -->
+  <div class="container contentbg conreview   mt-3" >
+    <table class="table bg-light  " >
+      <thead>
+        <tr>
+          <!-- <th scope="row">No.</th> -->
+        </tr>
+      </thead>
+      <tbody id="tbody1" >
+      </tbody>
+    </table>
+  </div>
+  <!-- Table -->
+
+
+
+  <!-- Boostrap Bundle Js -->
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <!-- JS -->
+  <script type="module" src="home.js"></script>
+
+</body>
+
+</html>

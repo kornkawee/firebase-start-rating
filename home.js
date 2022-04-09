@@ -598,7 +598,7 @@ function AddItemToTable(id, imagename, emailuser, imageurl, rate, review, timere
             <div class="datecont text-success mb-2">
           <div class="row">
           <div  class="col-lg-2 col-md-4 col-sm-12">
-          วันที่ ${timereview.currentDate}:${timereview.currentMonth}:${timereview.currentYear}</div>  
+          วันที่ ${timereview.currentDate}/${timereview.currentMonth}/${timereview.currentYear}</div>  
           <div class="col-lg-2 col-md-4 col-sm-12">
           เวลา  ${timereview.hour}:${timereview.minute}:${timereview.seconds}</div>
           </div>
